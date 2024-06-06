@@ -1,0 +1,64 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7; /* Fondo gris claro */
+  color: #333333; /* Texto gris oscuro */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #FF69B4; /* Rosa claro */
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 20px;
+}
+
+thead {
+  background-color: #FFC0CB; /* Rosa claro */
+  color: #FFFFFF;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 2px solid #FFC0CB; /* Rosa claro */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FFF0F5; /* Rosa claro más claro */
+}
+
+tbody tr:hover {
+  background-color: #FFB6C1; /* Rosa más oscuro al pasar el ratón */
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #007bff; 
+  border-color: #007bff;
+}

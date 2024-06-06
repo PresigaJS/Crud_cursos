@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Css/style.css">
+  <title>Curso matematicas</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Cursos de matematicas</h1>
+  </div>
+
+  <div class="container">
+    <!-- Tabla para mostrar los cursos -->
+    <div id="tabla-cursos-container">
+      <table id="tabla-cursos">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Tema</th>
+            <th>Vistas</th>
+            <th>Nivel</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-tabla">
+          <!-- Aquí se generará la tabla dinámicamente -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Formulario para agregar o editar un curso -->
+    <form id="form-agregar" class="mt-4">
+      <div id="titulo-formulario">
+        <h2>Agregar Curso</h2>
+      </div>
+      <div class="mb-3">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="lenguaje">Tema:</label>
+        <input type="text" id="lenguaje" name="lenguaje" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="vistas">Vistas:</label>
+        <input type="number" id="vistas" name="vistas" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="nivel">Nivel:</label>
+        <select id="nivel" name="nivel" class="form-control" required>
+          <option value="easy">Easy</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="estado">Estado:</label>
+        <input type="checkbox" id="estado" name="estado" class="form-check-input" checked>
+        <label class="form-check-label" for="estado">Activo</label>
+      </div>
+      <button type="submit" class="btn btn-success">Agregar</button>
+    </form>
+    
+    <!-- Formulario para editar un curso (inicialmente oculto) -->
+    <form id="form-editar" style="display: none;" class="mt-4">
+      <div id="titulo-formulario">
+        <h2>Editar Curso</h2>
+      </div>
+      <div class="mb-3">
+        <label for="id-editar">ID:</label>
+        <input type="text" id="id-editar" name="id-editar" class="form-control" readonly>
+      </div>
+      <div class="mb-3">
+        <label for="titulo-editar">Título:</label>
+        <input type="text" id="titulo-editar" name="titulo-editar" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="lenguaje-editar"> Tema:</label>
+        <input type="text" id="lenguaje-editar" name="lenguaje-editar" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="vistas-editar">Vistas:</label>
+        <input type="number" id="vistas-editar" name="vistas-editar" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="nivel-editar">Nivel:</label>
+        <select id="nivel-editar" name="nivel-editar" class="form-control" required>
+          <option value="easy">Easy</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="estado-editar">Estado:</label>
+        <input type="checkbox" id="estado-editar" name="estado-editar" class="form-check-input" checked>
+        <label class="form-check-label" for="estado-editar">Activo</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar cambios</button>
+      <button id="cancelar-edicion" class="btn btn-secondary">Cancelar</button>
+    </form>
+  </div>
+
+ 
+  
+  <div class="container" id="contenedor-btn-volver">
+    <!-- Botón para volver -->
+    <a href="/html/principal.html"><button id="btn-volver" type="button" class="btn btn-success">Volver</button></a>
+  </div>
+  
+
+
+
+  <script src="/Js/crud.js"></script> 
+</body>
+</html>
